@@ -1,0 +1,125 @@
+.promo {
+    min-height: 100vh;
+    padding-top: 205px;
+    background: rgb(205, 224, 215);
+    position: relative;
+
+    &__top-title {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        @include before_circle;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+
+    &__button {
+        margin-top: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        width: 135px;
+        height: 45px;
+        border-radius: 10px;
+        background: $main-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__about-me {
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 12px;
+        text-decoration: none;
+        color: #000;
+        padding: 13px 31px;
+        &:hover {
+            background-color: #FFA501;
+            border-radius: 10px;
+            outline: 2px solid black;
+            padding: 13px 31px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: fixed;
+        top: 230px;
+        width: 25px;
+        left: 50px;
+        align-items: center;
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            transform: rotate(-90deg) translate(-40%);
+            width: 155px;
+            height: 25px;
+            &:hover {
+                transition: .2s all;
+                color: $main-color;
+            }
+        }
+        &-line {
+            width: 2px;
+            height: 70px;
+            background-color: #000;
+            &:hover {
+                transition: .2s all;
+                background-color: $main-color;
+            }
+        }
+        &-facebook {
+            &:hover {
+                svg path {
+                    transition: .2s all;
+                    fill: #FFA501
+                }
+            }
+        }
+        &-instagram {
+            &:hover {
+                svg path {
+                    transition: .2s all;
+                    fill: #FFA501
+                }
+            }
+        }
+        &-github {
+            &:hover {
+                svg path {
+                    transition: .2s all;
+                    fill: #FFA501
+                }
+            }
+        }
+    }
+
+    &__hamburger {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        height: 21px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #151812;
+        }
+        span.long {
+            width: 36px;
+        }
+    }
+}

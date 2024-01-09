@@ -32,7 +32,7 @@ const path = {
     },
     src: {
         html: srcPath + "*.html",
-        css: srcPath + "assets/scss/*.sass", //change:sass/scss//
+        css: srcPath + "assets/scss/*.scss", //change:sass/scss//
         js: srcPath + "assets/js/*.js",
         images: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{css,eot,woff,woff2,ttf,svg}"
@@ -40,7 +40,7 @@ const path = {
     watch: {
         html:   srcPath + "**/*.html",
         js:     srcPath + "assets/js/**/*.js",
-        css:    srcPath + "assets/scss/**/*.sass", //change:sass/scss//
+        css:    srcPath + "assets/scss/**/*.scss", //change:sass/scss//
         images: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{css,eot,woff,woff2,ttf,svg}"
     },
@@ -63,9 +63,9 @@ function html() {
         .pipe(browserSync.reload({stream: true}));
 }
 
-function normalize() {
-    return gulp.src('src/assets/scss/normalize/*.css')
-      .pipe(gulp.dest('dist/assets/css/normalize'));
+function libs() {
+    return gulp.src('src/assets/scss/libs/*.css')
+      .pipe(gulp.dest('dist/assets/css/libs'));
   }
 
 function css() {
@@ -161,12 +161,12 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, normalize, css, js, images, webpImages, fonts))
+const build = gulp.series(clean, gulp.parallel(html, libs, css, js, images, webpImages, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 
 exports.html = html
-exports.normalize = normalize
+exports.libs = libs
 exports.css = css
 exports.js = js
 exports.images = images

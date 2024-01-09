@@ -1,0 +1,11 @@
+@media (max-width:576px) {
+.promo {
+    &__top-title {
+        margin-left: 20px;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+}
