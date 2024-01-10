@@ -16,6 +16,12 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
+p {
+    margin: 0;
+}
 @import "blocks/promo";
 @import "blocks/menu";
+@import "blocks/about";
+
 @import "media/media";

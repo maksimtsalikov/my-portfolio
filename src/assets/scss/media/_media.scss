@@ -7,5 +7,19 @@
         font-size: 26px;
         line-height: 35px;
     }
+    &__social {
+        display: none;
+    }
+}
+
+.about {
+    grid-template-columns: repeat(1, minmax(300px, 570px));
+    grid-template-rows: repeat(1, minmax(600px, 900px));
+    justify-content: center;
+
+    &__card{
+        grid-template-columns: repeat(1, minmax(260px, 285px));
+
+    }
 }
 }
