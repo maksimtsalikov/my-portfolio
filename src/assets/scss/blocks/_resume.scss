@@ -1,0 +1,131 @@
+.resume {
+    padding-top: 120px;
+    &__top-header {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        @include before_circle;
+        &::before{
+            top: 28px;
+            left: 552px;
+        }
+    }
+    &__header {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    &__line {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 425px 425px;
+        justify-content: center;
+        column-gap: 135px;
+    }
+
+    &__column {
+        padding-top: 60px;
+        &-top-header{
+            padding: 0 0 0 50px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+            position: absolute;
+            &::before {
+                content: '';
+                position: relative;
+                display: block;
+                width: 16px;
+                height: 16px;
+                left: -50px;
+                top: 19px;
+                border-radius: 100%;
+                background-color: $main-color;
+            }
+        }
+        &-header {
+            color: #000;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+            padding: 75px 0 0 105px;
+        }
+        &-subheader {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+            padding-left: 105px;
+        }
+        &-round {
+            position: absolute;
+            @include before_circle;
+            &::before {
+                width: 38px;
+                height: 38px;
+                top: -35px;
+                right: -50px;
+            }
+            &-university {
+                position: relative;
+                left: 59px;
+                top: -67px;
+            }
+            &-courses {
+                position: relative;
+                left: 57px;
+                top: -65px;
+            }
+            &-seo {
+                position: relative;
+                left: 57px;
+                top: -66px;
+            }
+            &-designer {
+                position: relative;
+                left: 57px;
+                top: -67px;                
+            }
+        }
+        &-subtitle {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+            padding-left: 50px;
+            padding-top: 12px;
+            text-align: justify;
+        }
+}
+    &__column-item {
+        // position: relative;
+        &::before {
+            content: '';
+            width: 73px;
+            height: 1px;
+            position: absolute;
+            background-color: #000;
+            top: 91px;
+            left: -23px;
+        }
+    }
+    li {
+        position: relative;
+        &::before {
+            content: '';
+            width: 1px;
+            height: 100%;
+            top: 35px;
+            left: -24px;
+            position: absolute;
+            background-color: #000;
+        }
+    }       
+}
