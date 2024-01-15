@@ -70,10 +70,9 @@ ul {
     font-weight: 700;
     width: 135px;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 12px;
     background: #FFA501;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-left: 10px;
 }
 
 .promo__about-me {
@@ -120,12 +119,20 @@ ul {
     background-color: #FFA501;
 }
 
-.promo__social-facebook:hover svg path {
+.promo__social-vk {
+    transform: rotate(270deg);
+}
+
+.promo__social-vk:hover svg path {
     transition: 0.2s all;
     fill: #FFA501;
 }
 
-.promo__social-instagram:hover svg path {
+.promo__social-tg {
+    transform: rotate(270deg);
+}
+
+.promo__social-tg:hover svg path {
     transition: 0.2s all;
     fill: #FFA501;
 }
@@ -603,6 +610,7 @@ ul {
 
 .skills__card {
     border: 1px solid #000;
+    border-radius: 12px;
 }
 
 .skills__card-logo {
@@ -744,7 +752,7 @@ ul {
 }
 
 .portfolio__grid-item img {
-    border-radius: 6%;
+    border-radius: 12%;
 }
 
 .portfolio__grid-item:hover {
