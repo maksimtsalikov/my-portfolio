@@ -17,3 +17,9 @@ const process = document.querySelectorAll('.skills__rating-items-head-process'),
     process.forEach( (item, i) => {
         lines[i].style.width = item.innerHTML;
     });
+
+const menuLink = document.querySelector('.promo__menu-block-link');
+
+        menuLink.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
