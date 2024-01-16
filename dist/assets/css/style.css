@@ -1021,6 +1021,7 @@ ul {
     font-weight: 700;
     line-height: normal;
     border: none;
+    border-radius: 12px;
 }
 
 .contact-form__policy {
