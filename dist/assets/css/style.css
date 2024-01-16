@@ -768,6 +768,9 @@ ul {
 
 .portfolio__grid-item--wordpress img {
     border-radius: 6%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .portfolio__grid-item--wordpress:hover {
@@ -1140,6 +1143,7 @@ ul {
 
     .portfolio__grid-item--wordpress {
         padding: 10px 20px;
+        height: 300px;
     }
 
     .price {

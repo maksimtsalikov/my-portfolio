@@ -530,9 +530,20 @@
                 <div class="portfolio__grid-item"><a href="https://uber.maksim-tsalikov.ru/" target="_blank"><img src="assets/img/uber.svg" alt="uber"></a></div>
                 <div class="portfolio__grid-item"><a href="https://runsmart.maksim-tsalikov.ru/" target="_blank"><img src="assets/img/pulse.svg" alt="pulse"></a></div>
                 <div class="portfolio__grid-item"><a href="#"><img src="assets/img/bread.svg" alt=""></a></div>
-                <div class="portfolio__grid-item--plans"><a href="#"><img src="assets/img/plans.svg" alt=""></a></div>
+                <div class="portfolio__grid-item--plans"><a href="#"><!--- Подключаем несколько картинок под разные устройства и говорим какую из них загрузить---><img 
+                    srcset="assets/img/plans-min.svg 280w, assets/img/plans.svg 400w" 
+                    sizes="(max-width: 576px) 100px, (min-width: 577px) 400px" 
+                    src="assets/img/plans.svg" alt=""></a> <!-- В srcset загружаем сколько нужно картинок и говорим: 
+                    картинка 280w загружается только когда пользователь заходит с 576px(включительно) и меньше.
+                    А картинка 400w загружается только когда пользователь заходит с 577px(включительно) и выше.
+                    100px и 200px в атрибуте sizes хз зачем но нужны без них не работает + не забывать про кеширование браузера shift+f5 в помощь для сноса кеша страницы-->
+                </div>
                 <div class="portfolio__grid-item"><a href="#"><img src="assets/img/ipad.svg" alt=""></a></div>
-                <div class="portfolio__grid-item--wordpress"><a href="https://wordpress.maksim-tsalikov.ru/" target="_blank"><img src="assets/img/wordpress.svg" alt="wordpress"></a></div>
+                <div class="portfolio__grid-item--wordpress"><a href="https://wordpress.maksim-tsalikov.ru/" target="_blank"><img 
+                    srcset="assets/img/wordpress-min.svg 280w, assets/img/wordpress.svg 400w" 
+                    sizes="(max-width: 576px) 100px, (min-width: 577px) 400px" 
+                    src="assets/img/wordpress.svg" alt=""></a>
+                </div>
             </div>
         </div>
     </section>
