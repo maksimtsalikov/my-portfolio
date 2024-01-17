@@ -536,7 +536,15 @@
                     src="assets/img/plans.svg" alt=""></a> <!-- В srcset загружаем сколько нужно картинок и говорим: 
                     картинка 280w загружается только когда пользователь заходит с 576px(включительно) и меньше.
                     А картинка 400w загружается только когда пользователь заходит с 577px(включительно) и выше.
-                    100px и 200px в атрибуте sizes хз зачем но нужны без них не работает + не забывать про кеширование браузера shift+f5 в помощь для сноса кеша страницы-->
+                    100px и 200px в атрибуте sizes хз зачем но нужны без них не работает + не забывать про кеширование браузера shift+f5 в помощь для сноса кеша страницы
+                        
+                    Или можно использовать <picture> обернув его тегом <a> (<picture> даже понятнее)
+                    <picture>
+                        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+                        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+                        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+                    </picture>    
+                -->
                 </div>
                 <div class="portfolio__grid-item"><a href="#"><img src="assets/img/ipad.svg" alt=""></a></div>
                 <div class="portfolio__grid-item--wordpress"><a href="https://wordpress.maksim-tsalikov.ru/" target="_blank"><img 
