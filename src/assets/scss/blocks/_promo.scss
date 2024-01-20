@@ -1,3 +1,25 @@
+// Custom Shape Dividers SVG from : https://www.shapedivider.app/ >>>
+.custom-shape-divider-top-1705760124 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1705760124 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1705760124 .shape-fill {
+    fill: #FFA501;
+}
+// <<< Custom Shape Dividers SVG from : https://www.shapedivider.app/
 .promo {
     min-height: 100vh;
     padding-top: 205px;
@@ -118,3 +140,4 @@
         }
     }
 }
+// 

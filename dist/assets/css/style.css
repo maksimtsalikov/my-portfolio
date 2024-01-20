@@ -31,6 +31,27 @@ ul {
     margin-bottom: 0;
 }
 
+.custom-shape-divider-top-1705760124 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1705760124 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1705760124 .shape-fill {
+    fill: #FFA501;
+}
+
 .promo {
     min-height: 100vh;
     padding-top: 205px;
